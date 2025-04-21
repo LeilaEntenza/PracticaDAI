@@ -1,0 +1,24 @@
+{
+  "name": "practicadai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeilaEntenza/PracticaDAI.git"
+  },
+  "author": "Lei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeilaEntenza/PracticaDAI/issues"
+  },
+  "homepage": "https://github.com/LeilaEntenza/PracticaDAI#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
