@@ -1,3 +1,3 @@
 # PracticaDAI
 
-## En este trabajo se pueden ver aplicadas bases de node y express utilizando endpoints :)
+## En este trabajo se pueden ver aplicados conceptos de node, express y endpoints :)
