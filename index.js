@@ -53,22 +53,26 @@ app.get('/materias', (req, res) => {
 
 */
 
+app.use(express.json());
+
 let personas = [];
 app.post('/persona', (req, res) => {
-    let nombre = req.body;
-    personas.push(nombre);
-    res.send(nombre);
+    let nombre = req.body.nombre;
+    personas.push(req.body);
+    res.send("Se agrego a " + nombre);
 })
 
 app.get('/personas', (req, res) => {
     res.json(personas);
 })
 
-app.delete('/eliminar:indice', (req, res) => {
+app.delete('/eliminar/:indice', (req, res) => {
     const indice = Number(req.params.indice);
     if (isNaN(indice) || personas[indice] == null){
-        return res.send("Persona no encontrada")
+        res.send("Persona no encontrada")
     }
-    personas.splice(indice, 1);
-    res.send("Persona eliminada");
+    else{
+        personas.splice(indice, 1);
+        res.send("Persona eliminada");
+    }
 })
